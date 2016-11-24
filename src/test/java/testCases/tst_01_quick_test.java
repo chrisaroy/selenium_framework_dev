@@ -43,6 +43,7 @@ public class tst_01_quick_test {
 	
 	@AfterClass
 	public void afterClass() {
+		driver.close();
 		driver.quit();
 		TestLog.endTest();
 	}

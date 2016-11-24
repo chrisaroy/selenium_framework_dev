@@ -85,3 +85,7 @@ target/classes/META-INF/maven/selenium_framework_dev/selenium_framework_dev/pom.
 test-output/old/Default suite/methods-not-run.html
 test-output/bullet_point.png
 target/classes/META-INF/maven/selenium_framework_dev/selenium_framework_dev/pom.xml
+src/test/java/testResults/2016-11-24 11-42-10 tst_00_test_template/screenshot_1_assert_verify.png
+target/test-classes/testResults/2016-11-24 11-42-10 tst_00_test_template/screenshot_1_assert_verify.png
+target/test-classes/testResults/2016-11-24 11-42-10 tst_00_test_template/tst_00_test_template.log
+src/test/java/testResults/2016-11-24 11-42-10 tst_00_test_template/tst_00_test_template.log

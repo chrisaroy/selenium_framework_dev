@@ -95,7 +95,7 @@ public class Support {
 			TestLog.info(message + " - wait time: " + String.valueOf(wait_time) + " seconds.");
 		}
 		else {
-			TestLog.info("Wait Time: " + String.valueOf(wait_time) + " seconds.");
+			TestLog.info("Wait Time: " + String.valueOf(wait_time) + " second(s).");
 		}
 		TimeUnit.SECONDS.sleep(wait_time);
 	}

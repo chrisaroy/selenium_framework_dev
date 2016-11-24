@@ -35,6 +35,7 @@ public class Support {
 		}
 	}
 	
+	
 	public static void setupLogging(String test_name){
 		/**
 		 * Sets up the configuration file for logging and test name.
@@ -46,7 +47,6 @@ public class Support {
 		
 		//Set Base Path
 		System.setProperty("test_results_base_directory", Properties.test_results_base_directory);
-		
 		
 		//Set Date Time
 		String current_date_time = new SimpleDateFormat("yyyy-MM-dd HH-mm-ss").format(Calendar.getInstance().getTime());

@@ -45,3 +45,43 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+test-output/testng.css
+test-output/testng-reports.js
+test-output/skipped.png
+test-output/old/index.html
+test-output/testng-results.xml
+test-output/testng-failed.xml
+test-output/old/Default suite/toc.html
+test-output/old/Default suite/methods.html
+test-output/old/Default suite/methods-alphabetical.html
+test-output/old/Default suite/groups.html
+test-output/old/Default suite/Default test.properties
+test-output/junitreports/TEST-testCases.tst_03_take_image.xml
+test-output/jquery-1.7.1.min.js
+test-output/emailable-report.html
+test-output/failed.png
+test-output/junitreports/TEST-testCases.tst_01_quick_test.xml
+test-output/Default suite/Default test.xml
+test-output/collapseall.gif
+*.class
+test-output/testng-reports.css
+test-output/old/Default suite/reporter-output.html
+test-output/old/Default suite/index.html
+test-output/junitreports/TEST-testCases.tst_02_basic.xml
+test-output/Default suite/Default test.html
+test-output/index.html
+test-output/Default suite/testng-failed.xml
+test-output/old/Default suite/classes.html
+test-output/old/Default suite/main.html
+test-output/passed.png
+test-output/navigator-bullet.png
+target/classes/META-INF/MANIFEST.MF
+target/test-classes/config/log4j2.xml
+target/test-classes/geckodriver.exe
+target/test-classes/testResults/2016-11-23 21-14-59 tst_01_quick_test/tst_01_quick_test.log
+test-output/old/Default suite/testng.xml.html
+target/test-classes/testResults/2016-11-23 21-14-59 tst_01_quick_test/screenshot_1_assert_verify.png
+target/classes/META-INF/maven/selenium_framework_dev/selenium_framework_dev/pom.properties
+test-output/old/Default suite/methods-not-run.html
+test-output/bullet_point.png
+target/classes/META-INF/maven/selenium_framework_dev/selenium_framework_dev/pom.xml

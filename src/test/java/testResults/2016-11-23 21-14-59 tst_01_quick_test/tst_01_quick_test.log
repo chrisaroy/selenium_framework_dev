@@ -1,0 +1,29 @@
+2016 11 23 - 21:15:00.907 [main] INFO : ***********************************************************
+2016 11 23 - 21:15:00.916 [main] INFO : **** Start Test: tst_01_quick_test ****
+2016 11 23 - 21:15:00.917 [main] INFO : ***********************************************************
+
+2016 11 23 - 21:15:00.918 [main] DEBUG:   Set gecko driver path.
+2016 11 23 - 21:15:00.919 [main] DEBUG:   gecko driver expected to be at: src\test\resources\geckodriver.exe
+2016 11 23 - 21:15:12.246 [main] INFO : Start test step: test_case_basic_step
+2016 11 23 - 21:15:12.247 [main] INFO :   Log on to website
+2016 11 23 - 21:15:19.846 [main] INFO :   Wait Time: 1 seconds.
+2016 11 23 - 21:15:20.865 [main] INFO :   Take Image at: ONLINE STORE | Toolsqa Dummy Test site
+2016 11 23 - 21:15:21.240 [main] INFO :   ASSERT: Check Title
+2016 11 23 - 21:15:21.241 [main] INFO :     Result: PASS
+2016 11 23 - 21:15:21.241 [main] INFO :     actual: ONLINE STORE | Toolsqa Dummy Test site
+2016 11 23 - 21:15:21.241 [main] INFO :     expected: ONLINE STORE | Toolsqa Dummy Test site
+2016 11 23 - 21:15:21.242 [main] INFO :     Screen Capture is: screen_capture_1_verify
+2016 11 23 - 21:15:21.247 [main] INFO :   Wait after test - wait time: 4 seconds.
+2016 11 23 - 21:15:27.531 [main] INFO : ***********************************************************
+2016 11 23 - 21:15:27.533 [main] INFO : **** End Test: tst_01_quick_test ****
+2016 11 23 - 21:15:27.533 [main] INFO : ***********************************************************
+2016 11 23 - 21:15:27.533 [main] INFO : 
+2016 11 23 - 21:15:27.534 [main] INFO : ***********************************************************
+2016 11 23 - 21:15:27.535 [main] INFO : TEST SUMMARY:
+2016 11 23 - 21:15:27.535 [main] INFO :   Test Name: tst_01_quick_test
+2016 11 23 - 21:15:27.536 [main] INFO :   Test Steps: 1
+2016 11 23 - 21:15:27.536 [main] INFO :   Verification: 
+2016 11 23 - 21:15:27.537 [main] INFO :     Passed: 1
+2016 11 23 - 21:15:27.538 [main] INFO :     Failed: 0
+2016 11 23 - 21:15:27.538 [main] INFO :     Total:  1
+2016 11 23 - 21:15:27.538 [main] INFO : ***********************************************************

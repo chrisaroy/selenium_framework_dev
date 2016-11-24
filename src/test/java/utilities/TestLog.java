@@ -73,11 +73,13 @@ public class TestLog {
 		TestLog.info("***********************************************************");
 		TestLog.info("TEST SUMMARY:");
 		TestLog.info("  Test Name: " + Properties.test_name);
+		TestLog.info("  Test Summary: " + Properties.test_summary);
 		TestLog.info("  Test Steps: " + Properties.test_step);
 		TestLog.info("  Verification: ");
 		TestLog.info("    Passed: " + Properties.number_passes);
 		TestLog.info("    Failed: " + Properties.number_fails);
 		TestLog.info("    Total:  " + Properties.number_verifications);
+		TestLog.info("  Requirements: " + Properties.requirements);
 		//TestLog.info("  Number that were asserts: " + Properties.number_asserts);
 		TestLog.info("***********************************************************");
 	}

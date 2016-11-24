@@ -11,6 +11,7 @@ import java.util.concurrent.TimeUnit;
 import utilities.Confirm;
 import utilities.Support;
 import utilities.TestLog;
+import config.Properties;
 
 
 public class tst_00_test_template {
@@ -20,14 +21,17 @@ public class tst_00_test_template {
 	 * Test Name: Test Template
 	 * 
 	 * Description: <test description>
+	 * @return 
 	 */
-	String manual_test_version = ".1";
-	
-	String summary = "<Test Summary>";
-	
-	String[] requirements = {"123", "456"};
-	
-	int manual_test_time = 30;
+	static{
+		Properties.manual_test_version = "1.0";
+		
+		Properties.test_summary = "<Test Summary>";
+		
+		Properties.requirements = "123, 456";
+		
+		Properties.manual_test_time = 45;
+	}
 	//*******************************************
 	
 	private static WebDriver driver = null;
@@ -43,7 +47,7 @@ public class tst_00_test_template {
 		 */
 		String full_class_name = MethodHandles.lookup().lookupClass().getName();
 		Support.setupLogging(full_class_name.substring(full_class_name.lastIndexOf('.')+1));
-
+	
 		TestLog.startTest();
 		Support.setGeckoDriverProperty();
 		driver = new FirefoxDriver();
@@ -61,7 +65,7 @@ public class tst_00_test_template {
 		TestLog.startTestStep();
 		
 		// Test code here
-		TestLog.info("Log on to website");
+		TestLog.info("Log on to web site");
 		String website = "http://www.store.demoqa.com";
 		driver.get(website);
 		

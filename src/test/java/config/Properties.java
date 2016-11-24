@@ -7,6 +7,10 @@ public class Properties {
 	
 	// Test setup related variables
 	public static String test_name = "";
+	public static String test_summary = "";
+	public static String manual_test_version = "";
+	public static String requirements = "";
+	public static int manual_test_time = 30;
 	public static int test_step = 0;
 	
 	public static int number_images = 0;

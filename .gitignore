@@ -94,3 +94,11 @@ src/test/java/testResults/2016-11-24 12-11-19 tst_00_test_template/tst_00_test_t
 target/test-classes/testResults/2016-11-24 12-11-19 tst_00_test_template/screenshot_1_assert_verify.png
 test-output/junitreports/TEST-testCases.tst_00_test_template.xml
 target/test-classes/testResults/2016-11-24 12-11-19 tst_00_test_template/tst_00_test_template.log
+target/test-classes/testResults/2016-11-25 19-04-04 tst_02_basic/screenshot_1_assert_verify.png
+target/test-classes/testResults/2016-11-25 19-04-04 tst_02_basic/screenshot_2_assert_verify.png
+src/test/java/testResults/2016-11-25 19-04-04 tst_02_basic/screenshot_1_assert_verify.png
+src/test/java/testResults/2016-11-25 19-04-04 tst_02_basic/tst_02_basic.log
+src/test/java/testResults/2016-11-25 19-09-49 tst_04_refactor_ids/tst_04_refactor_ids.log
+src/test/java/testResults/2016-11-25 19-04-04 tst_02_basic/screenshot_2_assert_verify.png
+target/test-classes/testResults/2016-11-25 19-04-04 tst_02_basic/tst_02_basic.log
+test-output/junitreports/TEST-testCases.tst_04_refactor_ids.xml

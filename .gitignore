@@ -108,3 +108,6 @@ src/test/java/testResults/2016-11-28 18-05-56 tst_02_basic/tst_02_basic.log
 src/test/java/testResults/2016-11-28 18-05-56 tst_02_basic/screenshot_1_assert_verify.png
 src/test/java/testResults/2016-11-28 12-43-41 tst_01_quick_test/tst_01_quick_test.log
 src/test/java/testResults/2016-11-28 18-05-56 tst_02_basic/screenshot_2_assert_verify.png
+target/test-classes/testResults/2016-11-28 21-42-40 tst_04_elements/screenshot_1_assert_verify.png
+target/test-classes/testResults/2016-11-28 21-42-40 tst_04_elements/screenshot_3_assert_verify.png
+target/test-classes/testResults/2016-11-28 21-42-40 tst_04_elements/screenshot_2_assert_verify.png

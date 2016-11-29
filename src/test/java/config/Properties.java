@@ -1,7 +1,15 @@
 package config;
 
+/**
+ * Properties used within the tests.
+ * @author Chris
+ */
 public class Properties {
-	public static String test_results_base_directory = "src\\test\\java\\TestResults\\";
+	/**
+	 * Properties used within the tests.  These are global properties that can be
+	 * set and updated within tests unless the property is set to final.
+	 */
+	public static final String test_results_base_directory = "src\\test\\java\\TestResults\\";
 	public static String test_results_folder = "";
 	public static String current_date_time = "";   // Also set in System.setProperty
 	
@@ -15,7 +23,7 @@ public class Properties {
 	
 	public static int number_images = 0;
 	
-	public static Boolean take_screenshot_on_fail = true;
+	public static final Boolean take_screenshot_on_fail = true;
 	public static int number_verifications = 0;
 	public static int number_asserts = 0;
 	public static int number_passes = 0;

@@ -72,7 +72,7 @@ public class tst_02_basic {
 		
 		TestLog.info("Log on");
 		store_site.login_page.login_button.click_button(driver);	
-		Support.snooze(3);
+		Support.sleep(3);
 		TestLog.endTestStep();
 	}	
 

@@ -66,7 +66,6 @@ public class tst_00_test_template {
 		
 		// Test code here
 		TestLog.info("Log on to web site");
-		String website = "http://www.store.demoqa.com";
 		driver.get(website);
 		
 		TestLog.endTestStep();

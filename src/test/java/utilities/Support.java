@@ -11,16 +11,19 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import config.Properties;
 
+/**
+ * Support class (methods)
+ * @author Chris
+ */
 public class Support {
+	
+	/**
+	 * Sets the gecko driver path.  Gecko driver interacts with the firefox browser.
+	 * Note: geckodriver.exe should be in the resources folder.
+	 * @return - True if launched
+	 * 		   - False if not launched
+	 */
 	public static Boolean setGeckoDriverProperty(){
-		/**
-		 * Set the gecko driver path.  Gecko driver is a driver that interacts
-		 * with the Firefox browser.
-		 * Note:  geckodriver.exe should be in resources folder.
-		 * @param
-		 * @return launched - True if launched
-		 * 					  False if not launched
-		 */
 		String gecko_driver_path = "src\\test\\resources\\geckodriver.exe";
 		try{
 			TestLog.debug("Set gecko driver path.");
@@ -35,14 +38,11 @@ public class Support {
 		}
 	}
 	
-	
+	/**
+	 * Sets up the configuration file for logging and test name.
+	 * @param test_name - name of the test.
+	 */
 	public static void setupLogging(String test_name){
-		/**
-		 * Sets up the configuration file for logging and test name.
-		 * 
-		 * @param test_name - name of test.
-		 * @return None
-		 */
 		System.setProperty("log4j.configurationFile", "src\\test\\java\\config\\log4j2.xml");
 		
 		//Set Base Path
@@ -62,16 +62,16 @@ public class Support {
 		Properties.test_results_folder = test_results_folder;
 	}
 		
-
+	/**
+	 * Takes a screenshot of the current web page.
+	 * @param driver - web driver
+	 * @param screenshot_name
+	 * @return screenshot_path
+	 * @throws IOException
+	 * @throws InterruptedException
+	 */
 	public static String takeImage(WebDriver driver, String screenshot_name) throws IOException, InterruptedException{
-		/**
-		 * Takes a screenshot of the current web page.
-		 * 
-		 * @param driver - WebDriver
-		 * @param screenshot_name - Name of image.
-		 * @return screenshot_path - Location of saved image.
-		 */
-		Support.snooze(1);
+		Support.sleep(1);
 		TestLog.info("Take Image at: " + driver.getTitle());
 		File scrnFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE); // Take screenshot
 		Properties.number_images +=1;
@@ -82,14 +82,25 @@ public class Support {
 		return screenshot_path;
 	}
 	
-	
+	/**
+	 * Takes a screenshot of the current web page.
+	 * @param driver - web driver
+	 * @return screenshot path
+	 * @throws IOException
+	 * @throws InterruptedException
+	 */
 	public static String takeImage(WebDriver driver) throws IOException, InterruptedException{
 		String screenshot_name = "";
 		String screenshot_path = takeImage(driver, screenshot_name);
 		return screenshot_path;
 	}
 
-	
+	/**
+	 * Sleep/wait desired amount of time in seconds.
+	 * @param wait_time - time to wait in seconds.
+	 * @param message - message to display.
+	 * @throws InterruptedException
+	 */
 	public static void sleep(int wait_time, String message) throws InterruptedException{
 		if (message != ""){
 			TestLog.info(message + " - wait time: " + String.valueOf(wait_time) + " seconds.");
@@ -100,8 +111,12 @@ public class Support {
 		TimeUnit.SECONDS.sleep(wait_time);
 	}
 	
-	
-	public static void snooze(int wait_time) throws InterruptedException{
+	/**
+	 * Sleep/wait desired amount of time in seconds.
+	 * @param wait_time - time to wait in seconds
+	 * @throws InterruptedException
+	 */
+	public static void sleep(int wait_time) throws InterruptedException{
 		String message = "";
 		sleep(wait_time, message);
 	}

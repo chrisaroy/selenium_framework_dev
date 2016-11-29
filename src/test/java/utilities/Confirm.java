@@ -1,18 +1,22 @@
 package utilities;
 
 import java.io.IOException;
-
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-
 import config.Properties;
 import utilities.TestLog;
 
+/**
+ * Class for verify and assert
+ * @author Chris
+ */
 public class Confirm {
 	
+	/**
+	 * Logs the results of the verify or assert.
+	 */
 	private static void logResults(String desc, String result, Object act, Object exp, String reqs, Boolean img, String img_name, String check_type){
-		// Log results
 		TestLog.info(check_type + ": " + desc);
 		TestLog.info("  Result: " + result.toString());
 		TestLog.info("  actual: " + act.toString());
@@ -25,20 +29,21 @@ public class Confirm {
 		}	
 	}
 	
+	/**
+	 * Verify or Assert actual vs. Expected.  When verify is used, the test will continue and failure will be in
+	 * log.  Failure will not be logged in testng.
+	 * @param driver - web driver
+	 * @param description - Description of verify or assert
+	 * @param actual - Actual result
+	 * @param expected - Expected result
+	 * @param requirements - Requirements covered
+	 * @param take_image - Takes screenshot
+	 * @param check_type - 
+	 * @return - array with actual and expected
+	 * @throws IOException
+	 * @throws InterruptedException
+	 */
 	private static String[] assertVerify(WebDriver driver, String description, Object actual, Object expected, String requirements, Boolean take_image, String check_type) throws IOException, InterruptedException{
-		/*
-		 * Verify actual vs. Expected.  When verify is used, the test will continue and failure will be in
-		 * log.  Failure will not be logged in testng.
-		 * 
-    	 * @param description: Description of verification
-    	 * @param actual: Actual result
-    	 * @param expected: Expected result
-    	 * @param requirements: Requirement(s) tested
-    	 * @param capture_window_image: True - Take screen image at verification point.
-                                 False - Do not take image at verification point.
-   		 * @return: result - Pass - If actual and expected match.
-                      Fail - If actual and expected do not match
-		 */
 		String s_result = "";		
 		Properties.number_verifications += 1;
 		String verify_image_name = "screen_capture_" + Properties.number_verifications + "_verify";

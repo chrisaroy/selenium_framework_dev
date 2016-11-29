@@ -6,6 +6,13 @@ import appStoreDemo.store_demo_site;
 import utilities.TestLog;
 
 public class SignIn {
+	/**
+	 * Login method.  Selects link, enters user name and password, and clicks the Login button.
+	 * @param driver - web driver
+	 * @param user_name - Username to be entered into user name text box.
+	 * @param password - Password to be entered into password text box.
+	 * @throws InterruptedException
+	 */
 	public static void LogIn(WebDriver driver, String user_name, String password) throws InterruptedException{
 		TestLog.info("Start SignIn");
 		store_demo_site store_site = new store_demo_site();

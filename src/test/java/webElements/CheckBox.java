@@ -8,9 +8,13 @@ import webElements.GetElementByType;
 /**
  * Class for check box element.
  * @author Chris
- *
  */
 public class CheckBox extends BaseElement{
+	
+	/**
+	 * Constructor for check box
+	 * @param element_id - includes name, by type, and id.
+	 */
 	public CheckBox(String[] element_id){
 		super(element_id);
 	}
@@ -37,6 +41,5 @@ public class CheckBox extends BaseElement{
 		TestLog.info("Checked state of " + this.s_element_name + " is: " + String.valueOf(checked));
 		return checked;
 	}
-
 }
 

@@ -9,6 +9,11 @@ import utilities.TestLog;
  * @author Chris
  */
 public class RadioButton extends BaseElement{
+	
+	/**
+	 * Constructor for radio button
+	 * @param element_id - includes name, by type, and id.
+	 */
 	public RadioButton(String[] element_id){
 		super(element_id);
 	}
@@ -36,5 +41,4 @@ public class RadioButton extends BaseElement{
 		TestLog.info("Selected state of " + this.s_element_name + " is: " + String.valueOf(checked));
 		return checked;
 	}
-
 }

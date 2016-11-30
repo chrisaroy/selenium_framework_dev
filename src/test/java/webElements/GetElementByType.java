@@ -56,5 +56,4 @@ public class GetElementByType {
 		}
 		return select_element;
 	}
-	
 }

@@ -8,7 +8,6 @@ import webElements.GetElementByType;
 /**
  * Base class for all elements.
  * @author Chris
- *
  */
 public class BaseElement {
 	String s_element_name;
@@ -52,5 +51,4 @@ public class BaseElement {
 		TestLog.info("Displayed state of " + this.s_element_name + " is: " + String.valueOf(displayed));
 		return displayed;		
 	}
-	
 }

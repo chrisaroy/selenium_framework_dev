@@ -5,7 +5,12 @@ import org.openqa.selenium.WebDriver;
 import appStoreDemo.store_demo_site;
 import utilities.TestLog;
 
+/**
+ * Sign In class - method(s) for signing in.
+ * @author Chris
+ */
 public class SignIn {
+	
 	/**
 	 * Login method.  Selects link, enters user name and password, and clicks the Login button.
 	 * @param driver - web driver

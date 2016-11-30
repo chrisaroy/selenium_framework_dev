@@ -13,6 +13,11 @@ import utilities.TestLog;
  * @author Chris
  */
 public class ComboBox extends BaseElement{
+	
+	/**
+	 * Constructor for combo box
+	 * @param element_id - includes name, by type, and id.
+	 */
 	public ComboBox(String[] element_id){
 		super(element_id);
 	}
@@ -83,5 +88,4 @@ public class ComboBox extends BaseElement{
 		TestLog.info("Selected item is: " + selected_item);
 		return selected_item;
 	}
-
 }

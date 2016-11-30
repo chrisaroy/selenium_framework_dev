@@ -8,7 +8,6 @@ import config.Properties;
 /**
  * Class for Test Log
  * @author Chris
- *
  */
 public class TestLog {
 	// Initialize Log4j logs
@@ -132,5 +131,4 @@ public class TestLog {
 		//TestLog.info("  Number that were asserts: " + Properties.number_asserts);
 		TestLog.info("***********************************************************");
 	}
-	
 }

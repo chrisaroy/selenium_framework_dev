@@ -10,7 +10,11 @@ import webElements.GetElementByType;
  * @author Chris
  */
 public class Link extends BaseElement {
-	// Constructor for Link
+
+	/**
+	 * Constructor for Link
+	 * @param element_id - includes name, by type, and id.
+	 */
 	public Link(String[] element_id) {
 		super(element_id);
 	}
@@ -24,5 +28,4 @@ public class Link extends BaseElement {
 		WebElement link = GetElementByType.get_element_by_type(driver, this.s_element_by_type, this.s_element_id);
 		link.click();	
 	}
-	
 }

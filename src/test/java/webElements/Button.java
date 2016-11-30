@@ -5,10 +5,15 @@ import org.openqa.selenium.WebElement;
 import utilities.TestLog;
 import webElements.GetElementByType;
 
+/**
+ * Button class
+ * @author Chris
+ */
 public class Button extends BaseElement{
+	
 	/**
-	 * Element for button
-	 * @param element_id
+	 * Constructor for button
+	 * @param element_id - includes name, by type, and id.
 	 */
 	public Button(String[] element_id) {
 		super(element_id);

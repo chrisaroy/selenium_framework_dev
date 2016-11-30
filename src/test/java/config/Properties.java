@@ -1,14 +1,11 @@
 package config;
 
 /**
- * Properties used within the tests.
+ * Properties used within the tests. These are global properties that can be
+ * set and updated within tests unless the property is set to final.
  * @author Chris
  */
 public class Properties {
-	/**
-	 * Properties used within the tests.  These are global properties that can be
-	 * set and updated within tests unless the property is set to final.
-	 */
 	public static final String test_results_base_directory = "src\\test\\java\\TestResults\\";
 	public static String test_results_folder = "";
 	public static String current_date_time = "";   // Also set in System.setProperty
@@ -28,5 +25,4 @@ public class Properties {
 	public static int number_asserts = 0;
 	public static int number_passes = 0;
 	public static int number_fails = 0;
-
 }

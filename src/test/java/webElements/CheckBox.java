@@ -24,7 +24,7 @@ public class CheckBox extends BaseElement{
 	 * @param driver - web driver
 	 */
 	public void check(WebDriver driver){
-		TestLog.info("Select Checkbox: " + this.s_element_name);
+		TestLog.info("Select Checkbox \'" + this.s_element_name + "\'");
 		WebElement checkbox = GetElementByType.get_element_by_type(driver, this.s_element_by_type, this.s_element_id);
 		checkbox.click();
 	}
@@ -35,10 +35,10 @@ public class CheckBox extends BaseElement{
 	 * @return checked state
 	 */
 	public Boolean is_checked(WebDriver driver){
-		TestLog.info("Get checked state of " + this.s_element_name);
+		TestLog.info("Get checked state of \'" + this.s_element_name + "\'");
 		WebElement checkbox = GetElementByType.get_element_by_type(driver, this.s_element_by_type, this.s_element_id);
 		Boolean checked = checkbox.isSelected();
-		TestLog.info("Checked state of " + this.s_element_name + " is: " + String.valueOf(checked));
+		TestLog.info("Checked state of \'" + this.s_element_name + "\' is: " + String.valueOf(checked));
 		return checked;
 	}
 }

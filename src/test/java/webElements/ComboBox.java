@@ -28,7 +28,7 @@ public class ComboBox extends BaseElement{
 	 * @param index - index to select
 	 */
 	public void select_item_by_index(WebDriver driver, int index){
-		TestLog.info("Select Combobox: \'" + this.s_element_name + "\' by index number - " + index);
+		TestLog.info("Select Combobox: \'" + this.s_element_name + "\' by index number: " + index);
 		Select combobox = GetElementByType.get_select_element_by_type(driver, this.s_element_by_type, this.s_element_id);
 		combobox.selectByIndex(index-1);
 	}
@@ -39,7 +39,7 @@ public class ComboBox extends BaseElement{
 	 * @param value - value in combo box to select
 	 */
 	public void select_item_by_value(WebDriver driver, String value){
-		TestLog.info("Select Combobox " + this.s_element_name + " by value - " + value);
+		TestLog.info("Select Combobox \'" + this.s_element_name + "\' by value: " + value);
 		Select combobox = GetElementByType.get_select_element_by_type(driver, this.s_element_by_type, this.s_element_id);
 		combobox.selectByValue(value);
 	}
@@ -50,7 +50,7 @@ public class ComboBox extends BaseElement{
 	 * @param text - text to select
 	 */
 	public void select_item_by_text(WebDriver driver, String text){
-		TestLog.info("Select Combobox " + this.s_element_name + " by text - " + text);
+		TestLog.info("Select Combobox \'" + this.s_element_name + "\' by text: " + text);
 		Select combobox = GetElementByType.get_select_element_by_type(driver, this.s_element_by_type, this.s_element_id);
 		combobox.selectByVisibleText(text);
 	}
@@ -61,17 +61,19 @@ public class ComboBox extends BaseElement{
 	 * @return s_combo_box_items - list of items in the combo box
 	 */
 	public List<String> get_all_items(WebDriver driver){
-		TestLog.info("Get all items from: " + this.s_element_name);
+		TestLog.info("Get all items from \'" + this.s_element_name + "\'");
 		List<String> s_combo_box_items = new ArrayList<String>();
 		Select combobox = GetElementByType.get_select_element_by_type(driver, this.s_element_by_type, this.s_element_id);
 		List<WebElement> we_combo_box_items = combobox.getOptions();
 		
+		int count = 1;
 		for (WebElement element: we_combo_box_items)
 		{
 			String list_item = element.getText();
-			TestLog.info("  - " + list_item);
+			TestLog.info("  item " + count + ": " + list_item);
 			// Add to string list
 			s_combo_box_items.add(list_item);
+			count +=1;
 		}
 		return s_combo_box_items;
 	}
@@ -82,7 +84,7 @@ public class ComboBox extends BaseElement{
 	 * @return selected item as String
 	 */
 	public String get_selected_item(WebDriver driver){
-		TestLog.info("Get selected item from: " + this.s_element_name);
+		TestLog.info("Get selected item from \'" + this.s_element_name + "\'");
 		Select combobox = GetElementByType.get_select_element_by_type(driver, this.s_element_by_type, this.s_element_id);
 		String selected_item = combobox.getFirstSelectedOption().getText();
 		TestLog.info("Selected item is: " + selected_item);

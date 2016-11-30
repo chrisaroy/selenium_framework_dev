@@ -31,10 +31,10 @@ public class BaseElement {
 	 *         - False if element is not enabled
 	 */
 	public Boolean is_enabled(WebDriver driver){
-		TestLog.info("Get enabled state of " + this.s_element_name);
+		TestLog.info("Get enabled state of \'" + this.s_element_name + "\'");
 		WebElement element = GetElementByType.get_element_by_type(driver, this.s_element_by_type, this.s_element_id);
 		Boolean enabled = element.isEnabled();
-		TestLog.info("Enabled state of " + this.s_element_name + " is: " + String.valueOf(enabled));
+		TestLog.info("Enabled state of \'" + this.s_element_name + "\' is: " + String.valueOf(enabled));
 		return enabled;
 	}
 	
@@ -45,10 +45,10 @@ public class BaseElement {
 	 *         - False if element is not displayed.
 	 */
 	public Boolean is_displayed(WebDriver driver){
-		TestLog.info("Get displayed state of " + this.s_element_name);
+		TestLog.info("Get displayed state of \'" + this.s_element_name + "\'");
 		WebElement element = GetElementByType.get_element_by_type(driver, this.s_element_by_type, this.s_element_id);
 		Boolean displayed = element.isDisplayed();
-		TestLog.info("Displayed state of " + this.s_element_name + " is: " + String.valueOf(displayed));
+		TestLog.info("Displayed state of \'" + this.s_element_name + "\' is: " + String.valueOf(displayed));
 		return displayed;		
 	}
 }

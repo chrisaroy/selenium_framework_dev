@@ -24,7 +24,7 @@ public class Button extends BaseElement{
 	 * @param driver
 	 */
 	public void click_button(WebDriver driver){
-		TestLog.info("Click button: " + this.s_element_name);
+		TestLog.info("Click button \'" + this.s_element_name + "\'");
 		WebElement button = GetElementByType.get_element_by_type(driver, this.s_element_by_type, this.s_element_id);
 		button.click();
 	}

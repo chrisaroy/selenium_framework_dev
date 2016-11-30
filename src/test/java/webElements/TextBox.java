@@ -10,7 +10,11 @@ import webElements.GetElementByType;
  * @author Chris
  */
 public class TextBox extends BaseElement {
-	// Constructor for text box
+	
+	/**
+	 * Constructor for text box
+	 * @param element_id - includes name, by type, and id.
+	 */
 	public TextBox(String[] element_id) {
 		super(element_id);
 	}
@@ -25,5 +29,4 @@ public class TextBox extends BaseElement {
 		WebElement link = GetElementByType.get_element_by_type(driver, this.s_element_by_type, this.s_element_id);
 		link.sendKeys(text);
 	}
-	
 }

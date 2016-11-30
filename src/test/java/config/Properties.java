@@ -6,7 +6,7 @@ package config;
  * @author Chris
  */
 public class Properties {
-	public static final String test_results_base_directory = "src\\test\\java\\TestResults\\";
+	public static final String test_results_base_directory = "src\\test\\java\\TestResults\\"; 
 	public static String test_results_folder = "";
 	public static String current_date_time = "";   // Also set in System.setProperty
 	
@@ -20,6 +20,7 @@ public class Properties {
 	
 	public static int number_images = 0;
 	
+	// Used for test summary
 	public static final Boolean take_screenshot_on_fail = true;
 	public static int number_verifications = 0;
 	public static int number_asserts = 0;

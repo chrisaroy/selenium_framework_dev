@@ -2,7 +2,10 @@ package webElements;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+
+import config.Properties;
 import utilities.TestLog;
+import utilities.Wait;
 import webElements.GetElementByType;
 
 /**
@@ -22,10 +25,15 @@ public class Link extends BaseElement {
 	/**
 	 * Clicks on a link
 	 * @param driver - web driver
+	 * @throws InterruptedException 
 	 */
-	public void click_link(WebDriver driver){
+	public void click_link(WebDriver driver) throws InterruptedException{
 		TestLog.info("Click link \'" + this.s_element_name + "\'");
+		Wait.wait_during_action(Properties.WAIT_BEFORE_ACTION, Properties.WAIT_BEFORE_ACTION_TIME);
+		
 		WebElement link = GetElementByType.get_element_by_type(driver, this.s_element_by_type, this.s_element_id);
 		link.click();	
+		
+		Wait.wait_during_action(Properties.WAIT_AFTER_ACTION, Properties.WAIT_AFTER_ACTION_TIME);
 	}
 }

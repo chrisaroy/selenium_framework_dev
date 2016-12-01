@@ -20,6 +20,12 @@ public class Properties {
 	
 	public static int number_images = 0;
 	
+	// Timing - wait_time
+	public static final Boolean WAIT_BEFORE_ACTION = true;
+	public static final int WAIT_BEFORE_ACTION_TIME = 500; // value is in milliseconds
+	public static final Boolean WAIT_AFTER_ACTION = true;
+	public static final int WAIT_AFTER_ACTION_TIME = 1000; // value in milliseconds
+	
 	// Used for test summary
 	public static final Boolean take_screenshot_on_fail = true;
 	public static int number_verifications = 0;

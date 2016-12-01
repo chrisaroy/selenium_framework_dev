@@ -2,6 +2,7 @@ package testCases;
 
 import org.testng.annotations.Test;
 import utilities.Support;
+import utilities.Wait;
 import utilities.TestLog;
 import org.testng.annotations.BeforeClass;
 import java.io.IOException;
@@ -32,7 +33,7 @@ public class tst_03_take_image {
 		TestLog.info("Log on to website");
 		String website = "http://www.store.demoqa.com";
 		driver.get(website);
-		Support.sleep(2, "Wait before taking image");
+		Wait.sleep(2, "Wait before taking image");
 		
 		Support.takeImage(driver);
 		TestLog.info("After take image");

@@ -11,6 +11,7 @@ import org.testng.annotations.Test;
 import utilities.TestLog;
 import utilities.Confirm;
 import utilities.Support;
+import utilities.Wait;
 
 public class tst_01_quick_test {
 	
@@ -38,7 +39,7 @@ public class tst_01_quick_test {
 		String actualTitle = driver.getTitle();
 		String expectedTitle = "ONLINE STORE | Toolsqa Dummy Test site";
 		Confirm.assertCheck(driver, "Check Title", actualTitle, expectedTitle);
-		Support.sleep(4, "Wait after test");
+		Wait.sleep(4, "Wait after test");
 	}
 	
 	@AfterClass

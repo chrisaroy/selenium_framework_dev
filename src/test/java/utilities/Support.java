@@ -3,7 +3,6 @@ package utilities;
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
-import java.util.concurrent.TimeUnit;
 import java.util.Calendar;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -71,7 +70,7 @@ public class Support {
 	 * @throws InterruptedException
 	 */
 	public static String takeImage(WebDriver driver, String screenshot_name) throws IOException, InterruptedException{
-		Support.sleep(1);
+		Wait.sleep(1);
 		TestLog.info("Take Image at: " + driver.getTitle());
 		File scrnFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE); // Take screenshot
 		Properties.number_images +=1;
@@ -94,30 +93,5 @@ public class Support {
 		String screenshot_path = takeImage(driver, screenshot_name);
 		return screenshot_path;
 	}
-
-	/**
-	 * Sleep/wait desired amount of time in seconds.
-	 * @param wait_time - time to wait in seconds.
-	 * @param message - message to display.
-	 * @throws InterruptedException
-	 */
-	public static void sleep(int wait_time, String message) throws InterruptedException{
-		if (message != ""){
-			TestLog.info(message + " - wait time: " + String.valueOf(wait_time) + " seconds.");
-		}
-		else {
-			TestLog.info("Wait Time: " + String.valueOf(wait_time) + " second(s).");
-		}
-		TimeUnit.SECONDS.sleep(wait_time);
-	}
 	
-	/**
-	 * Sleep/wait desired amount of time in seconds.
-	 * @param wait_time - time to wait in seconds
-	 * @throws InterruptedException
-	 */
-	public static void sleep(int wait_time) throws InterruptedException{
-		String message = "";
-		sleep(wait_time, message);
-	}
 }

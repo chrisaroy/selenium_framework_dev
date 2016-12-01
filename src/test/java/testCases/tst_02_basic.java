@@ -8,8 +8,8 @@ import org.testng.annotations.AfterClass;
 import appStoreDemo.store_demo_site;
 import utilities.Confirm;
 import utilities.Support;
+import utilities.Wait;
 import utilities.TestLog;
-
 import java.io.IOException;
 import java.lang.invoke.MethodHandles;
 import java.util.concurrent.TimeUnit;
@@ -45,7 +45,7 @@ public class tst_02_basic {
 		String actual_title_page = driver.getTitle();
 		Confirm.assertCheck(driver, "Check the Title Page", actual_title_page, expected_title_page);
 		
-		Support.sleep(2, "Wait after checking title page");
+		Wait.sleep(2, "Wait after checking title page");
 		Boolean expected_s_cart_enabled = false;
 		Boolean actual_s_cart_enabled = store_site.home_page.shopping_cart_button.is_enabled(driver);
 		Confirm.verify(driver, "Check that shopping cart is disabled - Test Fail", actual_s_cart_enabled, expected_s_cart_enabled, "req_123");	
@@ -60,7 +60,7 @@ public class tst_02_basic {
 		
 		TestLog.info("Select link to go to Account link.");
 		store_site.home_page.my_account_link.click_link(driver);	
-		Support.sleep(3, "Wait after selecting link.");
+		Wait.sleep(3, "Wait after selecting link.");
 				
 		TestLog.info("Enter UN and Pwd");
 		store_site.login_page.user_name_textbox.enter_text(driver, "Porsche");
@@ -72,7 +72,7 @@ public class tst_02_basic {
 		
 		TestLog.info("Log on");
 		store_site.login_page.login_button.click_button(driver);	
-		Support.sleep(3);
+		Wait.sleep(3);
 		TestLog.endTestStep();
 	}	
 

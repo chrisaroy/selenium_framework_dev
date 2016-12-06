@@ -1,6 +1,6 @@
 package appStoreDemo;
 
-import webElements.GetElementByType;
+import support.webElements.GetElementByType;
 
 /**
  * IDs for the elements on the Login Page

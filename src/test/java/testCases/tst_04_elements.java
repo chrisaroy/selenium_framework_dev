@@ -2,18 +2,19 @@ package testCases;
 
 import org.testng.annotations.Test;
 import config.Properties;
-import utilities.Confirm;
-import utilities.Support;
-import utilities.TestLog;
+import support.utilities.Confirm;
+import support.utilities.Support;
+import support.utilities.TestLog;
+
 import org.testng.annotations.BeforeClass;
 import java.io.IOException;
 import java.lang.invoke.MethodHandles;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import appToolsQA.tools_qa_site;
-
 
 public class tst_04_elements {
 	/********************************************
@@ -100,13 +101,25 @@ public class tst_04_elements {
 		 */
 		TestLog.startTestStep();
 		
-		// Test code here
-		/*
-		TestLog.info("At Home page.");
-		String expected_title_page = "ONLINE STORE | Toolsqa Dummy Test site";
-		String actual_title_page = driver.getTitle();
-		Confirm.assertCheck(driver, "Check the Title Page", actual_title_page, expected_title_page);
-		*/
+		tools_qa_site tools_site = new tools_qa_site();
+		// by index
+		tools_site.practice_form_page.continents_combo_box.select_item_by_index(driver, 2);
+		
+		// get selected item
+		String selected_item = tools_site.practice_form_page.continents_combo_box.get_selected_item(driver);
+		Confirm.verify(driver, "Check selected item.", selected_item, "Europe");
+		
+		// by value
+		//tools_site.practice_form_page.continents_combo_box.select_item_by_value(driver, "Australia"); // This needs to use option value and not text.
+		
+		// by text
+		tools_site.practice_form_page.continents_combo_box.select_item_by_text(driver, tools_site.practice_form_page.CONTINENTS_AFRICA);
+		tools_site.practice_form_page.continents_combo_box.select_item_by_text(driver, tools_site.practice_form_page.CONTINENTS_NORTH_AMERICA);
+		
+		// get all items
+		List<String> combo_box_list = tools_site.practice_form_page.continents_combo_box.get_all_items(driver);
+		int sizeOfList = combo_box_list.size();
+		Confirm.verify(driver, "Check size of combobox list", sizeOfList, 7);
 		
 		TestLog.endTestStep();
 	}

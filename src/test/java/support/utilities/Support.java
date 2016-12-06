@@ -1,4 +1,4 @@
-package utilities;
+package support.utilities;
 
 import java.io.File;
 import java.io.IOException;
@@ -42,7 +42,7 @@ public class Support {
 	 * @param test_name - name of the test.
 	 */
 	public static void setupLogging(String test_name){
-		System.setProperty("log4j.configurationFile", "src\\test\\java\\config\\log4j2.xml");
+		System.setProperty("log4j.configurationFile", "src\\test\\java\\support\\config\\log4j2.xml");
 		
 		//Set Base Path
 		System.setProperty("test_results_base_directory", Properties.test_results_base_directory);

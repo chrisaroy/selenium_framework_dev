@@ -1,9 +1,11 @@
 package testCases;
 
 import org.testng.annotations.Test;
-import utilities.Support;
-import utilities.Wait;
-import utilities.TestLog;
+
+import support.utilities.Support;
+import support.utilities.TestLog;
+import support.utilities.Wait;
+
 import org.testng.annotations.BeforeClass;
 import java.io.IOException;
 import java.lang.invoke.MethodHandles;

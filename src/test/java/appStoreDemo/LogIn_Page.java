@@ -1,8 +1,8 @@
 package appStoreDemo;
 
-import webElements.TextBox;
 import appStoreDemo.Login_Page_IDs;
-import webElements.Button;
+import support.webElements.Button;
+import support.webElements.TextBox;
 
 /**
  * Elements and related code for the Log in page

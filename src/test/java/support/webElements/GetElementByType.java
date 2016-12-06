@@ -1,4 +1,4 @@
-package webElements;
+package support.webElements;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

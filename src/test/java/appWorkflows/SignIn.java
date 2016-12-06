@@ -3,7 +3,7 @@ package appWorkflows;
 import org.openqa.selenium.WebDriver;
 
 import appStoreDemo.store_demo_site;
-import utilities.TestLog;
+import support.utilities.TestLog;
 
 /**
  * Sign In class - method(s) for signing in.

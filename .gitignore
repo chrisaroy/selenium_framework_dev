@@ -111,3 +111,5 @@ src/test/java/testResults/2016-11-28 18-05-56 tst_02_basic/screenshot_2_assert_v
 target/test-classes/testResults/2016-11-28 21-42-40 tst_04_elements/screenshot_1_assert_verify.png
 target/test-classes/testResults/2016-11-28 21-42-40 tst_04_elements/screenshot_3_assert_verify.png
 target/test-classes/testResults/2016-11-28 21-42-40 tst_04_elements/screenshot_2_assert_verify.png
+test-output/junitreports/TEST-testCases.tst_05_new_windows_and_alerts.xml
+target/test-classes/support/config/log4j2.xml

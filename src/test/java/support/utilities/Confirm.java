@@ -1,11 +1,11 @@
-package utilities;
+package support.utilities;
 
 import java.io.IOException;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import config.Properties;
-import utilities.TestLog;
+import support.utilities.TestLog;
 
 /**
  * Class for verify and assert

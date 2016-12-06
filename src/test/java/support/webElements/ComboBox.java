@@ -1,4 +1,4 @@
-package webElements;
+package support.webElements;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,8 +8,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
 import config.Properties;
-import utilities.TestLog;
-import utilities.Wait;
+import support.utilities.TestLog;
+import support.utilities.Wait;
 
 /**
  * Class for combo box select element

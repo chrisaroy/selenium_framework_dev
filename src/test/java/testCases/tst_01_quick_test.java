@@ -8,10 +8,11 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import utilities.TestLog;
-import utilities.Confirm;
-import utilities.Support;
-import utilities.Wait;
+
+import support.utilities.Confirm;
+import support.utilities.Support;
+import support.utilities.TestLog;
+import support.utilities.Wait;
 
 public class tst_01_quick_test {
 	

@@ -8,10 +8,11 @@ import org.testng.annotations.BeforeClass;
 import java.io.IOException;
 import java.lang.invoke.MethodHandles;
 import java.util.concurrent.TimeUnit;
-import utilities.Confirm;
-import utilities.Support;
-import utilities.TestLog;
+
 import config.Properties;
+import support.utilities.Confirm;
+import support.utilities.Support;
+import support.utilities.TestLog;
 
 
 public class tst_00_test_template {
@@ -55,7 +56,7 @@ public class tst_00_test_template {
 	}
   
 	@Test(priority=1)
-	public void test_case_eg1() {
+	public void test_case_eg1() throws InterruptedException, IOException{
 		/*
 		 * Step <n>: <Desc>
 		 * 

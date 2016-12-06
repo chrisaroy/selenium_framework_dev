@@ -1,12 +1,12 @@
-package webElements;
+package support.webElements;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import config.Properties;
-import utilities.TestLog;
-import utilities.Wait;
-import webElements.GetElementByType;
+import support.utilities.TestLog;
+import support.utilities.Wait;
+import support.webElements.GetElementByType;
 
 /**
  * Class for check box element.

@@ -1,8 +1,8 @@
 package appStoreDemo;
 
-import webElements.Button;
-import webElements.Link;
-import webElements.GetElementByType;
+import support.webElements.Button;
+import support.webElements.GetElementByType;
+import support.webElements.Link;
 
 /**
  * ID's for the elements on the Home Page.

@@ -1,16 +1,16 @@
 package appToolsQA;
 
-import webElements.TextBox;
-import webElements.RadioButton;
-import webElements.CheckBox;
-import webElements.ComboBox;
-import webElements.GetElementByType;
+import support.webElements.CheckBox;
+import support.webElements.ComboBox;
+import support.webElements.GetElementByType;
+import support.webElements.RadioButton;
+import support.webElements.TextBox;
 
 /**
  * ID's for the elements on the practice form page.
  * @author Chris
  */
-class automation_practice_form_page_ids{
+class practice_form_page_ids{
 	public static final String[] first_name_textbox_id = {"First Name Textbox", GetElementByType.BY_XPATH, "//input[@name='firstname']"};
 	public static final String[] male_radio_button_id = {"Male Radio Button", GetElementByType.BY_XPATH, "//input[@id='sex-0']"};
 	public static final String[] female_radio_button_id = {"Female Radio Button", GetElementByType.BY_XPATH, "//input[@id='sex-1']"};
@@ -35,10 +35,10 @@ public class Practice_Form_Page {
 	
 	
 	// Create elements used in page.
-	public TextBox first_name_textbox = new TextBox(automation_practice_form_page_ids.first_name_textbox_id);
-	public RadioButton male_radio_button = new RadioButton(automation_practice_form_page_ids.male_radio_button_id);
-	public RadioButton female_radio_button = new RadioButton(automation_practice_form_page_ids.female_radio_button_id);
-	public CheckBox manual_tester_checkbox = new CheckBox(automation_practice_form_page_ids.manual_tester_check_box_id);
-	public CheckBox automation_tester_checkbox = new CheckBox(automation_practice_form_page_ids.automation_tester_check_box_id);
-	public ComboBox continents_combo_box = new ComboBox(automation_practice_form_page_ids.continents_combo_box_id);
+	public TextBox first_name_textbox = new TextBox(practice_form_page_ids.first_name_textbox_id);
+	public RadioButton male_radio_button = new RadioButton(practice_form_page_ids.male_radio_button_id);
+	public RadioButton female_radio_button = new RadioButton(practice_form_page_ids.female_radio_button_id);
+	public CheckBox manual_tester_checkbox = new CheckBox(practice_form_page_ids.manual_tester_check_box_id);
+	public CheckBox automation_tester_checkbox = new CheckBox(practice_form_page_ids.automation_tester_check_box_id);
+	public ComboBox continents_combo_box = new ComboBox(practice_form_page_ids.continents_combo_box_id);
 }

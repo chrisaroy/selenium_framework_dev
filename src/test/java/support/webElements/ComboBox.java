@@ -32,7 +32,7 @@ public class ComboBox extends BaseElement{
 	 * @throws InterruptedException 
 	 */
 	public void select_item_by_index(WebDriver driver, int index) throws InterruptedException{
-		TestLog.info("Select Combobox: \'" + this.s_element_name + "\' by index number: " + index);
+		TestLog.info("Select Combo box: \'" + this.s_element_name + "\' by index number: " + index);
 		Wait.wait_during_action(Properties.WAIT_BEFORE_ACTION, Properties.WAIT_BEFORE_ACTION_TIME);
 		
 		Select combobox = GetElementByType.get_select_element_by_type(driver, this.s_element_by_type, this.s_element_id);
@@ -48,7 +48,7 @@ public class ComboBox extends BaseElement{
 	 * @throws InterruptedException 
 	 */
 	public void select_item_by_value(WebDriver driver, String value) throws InterruptedException{
-		TestLog.info("Select Combobox \'" + this.s_element_name + "\' by value: " + value);
+		TestLog.info("Select Combo box \'" + this.s_element_name + "\' by value: " + value);
 		Wait.wait_during_action(Properties.WAIT_BEFORE_ACTION, Properties.WAIT_BEFORE_ACTION_TIME);
 		
 		Select combobox = GetElementByType.get_select_element_by_type(driver, this.s_element_by_type, this.s_element_id);
@@ -64,7 +64,7 @@ public class ComboBox extends BaseElement{
 	 * @throws InterruptedException 
 	 */
 	public void select_item_by_text(WebDriver driver, String text) throws InterruptedException{
-		TestLog.info("Select Combobox \'" + this.s_element_name + "\' by text: " + text);
+		TestLog.info("Select Combo box \'" + this.s_element_name + "\' by text: " + text);
 		Wait.wait_during_action(Properties.WAIT_BEFORE_ACTION, Properties.WAIT_BEFORE_ACTION_TIME);
 		
 		Select combobox = GetElementByType.get_select_element_by_type(driver, this.s_element_by_type, this.s_element_id);

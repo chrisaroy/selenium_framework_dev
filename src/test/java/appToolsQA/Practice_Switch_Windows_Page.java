@@ -26,7 +26,7 @@ class practice_switch_window_ids{
  * Elements and related code for the practice switch window page.
  * @author Chris
  */
-public class Practice_Switch_Windows{
+public class Practice_Switch_Windows_Page{
 	public Button new_browser_window_button = new Button(practice_switch_window_ids.new_browser_window_button_id);
 	public Button new_message_window_button = new Button(practice_switch_window_ids.new_message_window_button_id);
 	public Button new_browser_tab_button = new Button(practice_switch_window_ids.new_browser_tab_button_id);

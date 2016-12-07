@@ -14,6 +14,8 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
+
+import appToolsQA.Practice_Form_Page;
 import appToolsQA.tools_qa_site;
 
 public class tst_04_elements {
@@ -37,7 +39,8 @@ public class tst_04_elements {
 	//*******************************************
 	
 	private static WebDriver driver = null;
-	String website = "http://toolsqa.com/automation-practice-form/";
+	//String website = "http://toolsqa.com/automation-practice-form/";
+	String website = "http://toolsqa.com";
 
 	@BeforeClass
 	public void beforeClass() {
@@ -70,23 +73,25 @@ public class tst_04_elements {
 		TestLog.info("Log on to web site");
 		driver.get(website);
 		
+		tools_qa_site tools_qa = new tools_qa_site();
+		Practice_Form_Page practice_form = tools_qa.home_page.top_link_bar.practice_form_link_select(driver);
+		
+		practice_form.first_name_textbox.enter_text(driver, "Jonesey");
+		
 		// Radio Button
-		tools_qa_site tools_site = new tools_qa_site();
-		tools_site.practice_form_page.first_name_textbox.enter_text(driver, "FRED");
+		practice_form.female_radio_button.click(driver);
+		Boolean rdo_btn_selected = practice_form.female_radio_button.is_selected(driver);
+		Confirm.verify(driver, "Female radio button selected", rdo_btn_selected, true);
 		
-		tools_site.practice_form_page.male_radio_button.click(driver);
-		Boolean radio_button_selected_actual = tools_site.practice_form_page.male_radio_button.is_selected(driver);
-		Confirm.verify(driver, "Male Radio button selected", radio_button_selected_actual, true);
-		
-		tools_site.practice_form_page.female_radio_button.click(driver);
+		practice_form.male_radio_button.click(driver);
 		
 		// Check box
-		Boolean cb_checked = tools_site.practice_form_page.manual_tester_checkbox.is_checked(driver);
+		Boolean cb_checked = practice_form.manual_tester_checkbox.is_checked(driver);
 		Confirm.verify(driver, "checkbox not checked", cb_checked, false);
 		
-		tools_site.practice_form_page.manual_tester_checkbox.check(driver);
-		cb_checked = tools_site.practice_form_page.manual_tester_checkbox.is_checked(driver);
-		Confirm.verify(driver, "checkbox not checked", cb_checked, true);
+		practice_form.manual_tester_checkbox.check(driver);
+		cb_checked = practice_form.manual_tester_checkbox.is_checked(driver);
+		Confirm.verify(driver, "check box not checked", cb_checked, true);
 		
 		TestLog.endTestStep();
 	}
@@ -94,14 +99,14 @@ public class tst_04_elements {
 	@Test(priority=2)
 	public void test_case_combo_box() throws IOException, InterruptedException {
 		/*
-		 * Step <n>: <Desc>
+		 * Step 2: Tests related to combo box element.
 		 * 
 		 * @param: None
 		 * @return: None
 		 */
 		TestLog.startTestStep();
-		
 		tools_qa_site tools_site = new tools_qa_site();
+
 		// by index
 		tools_site.practice_form_page.continents_combo_box.select_item_by_index(driver, 2);
 		

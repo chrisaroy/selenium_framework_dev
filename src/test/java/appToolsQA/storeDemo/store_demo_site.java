@@ -1,4 +1,4 @@
-package appStoreDemo;
+package appToolsQA.storeDemo;
 
 /**
  * Contains the pages for the store demo web site.

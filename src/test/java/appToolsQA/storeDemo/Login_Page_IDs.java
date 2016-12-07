@@ -1,4 +1,4 @@
-package appStoreDemo;
+package appToolsQA.storeDemo;
 
 import support.webElements.GetElementByType;
 

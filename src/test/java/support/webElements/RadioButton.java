@@ -27,7 +27,7 @@ public class RadioButton extends BaseElement{
 	 * @throws InterruptedException 
 	 */
 	public void click(WebDriver driver) throws InterruptedException{
-		TestLog.info("Click Radiobutton \'" + this.s_element_name + "\'");
+		TestLog.info("Click Radio button \'" + this.s_element_name + "\'");
 		Wait.wait_during_action(Properties.WAIT_BEFORE_ACTION, Properties.WAIT_BEFORE_ACTION_TIME);
 		
 		WebElement radio_button = GetElementByType.get_element_by_type(driver, this.s_element_by_type, this.s_element_id);

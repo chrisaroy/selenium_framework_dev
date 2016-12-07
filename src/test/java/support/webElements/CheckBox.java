@@ -28,7 +28,7 @@ public class CheckBox extends BaseElement{
 	 * @throws InterruptedException 
 	 */
 	public void check(WebDriver driver) throws InterruptedException{
-		TestLog.info("Select Checkbox \'" + this.s_element_name + "\'");
+		TestLog.info("Select Check box \'" + this.s_element_name + "\'");
 		Wait.wait_during_action(Properties.WAIT_BEFORE_ACTION, Properties.WAIT_BEFORE_ACTION_TIME);
 		
 		WebElement checkbox = GetElementByType.get_element_by_type(driver, this.s_element_by_type, this.s_element_id);

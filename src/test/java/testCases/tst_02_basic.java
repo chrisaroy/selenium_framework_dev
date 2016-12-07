@@ -3,9 +3,12 @@ package testCases;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
+
+import appToolsQA.storeDemo.store_demo_site;
+
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.AfterClass;
-import appStoreDemo.store_demo_site;
+
 import support.utilities.Confirm;
 import support.utilities.Support;
 import support.utilities.TestLog;

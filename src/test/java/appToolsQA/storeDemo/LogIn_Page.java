@@ -1,6 +1,6 @@
-package appStoreDemo;
+package appToolsQA.storeDemo;
 
-import appStoreDemo.Login_Page_IDs;
+import appToolsQA.storeDemo.Login_Page_IDs;
 import support.webElements.Button;
 import support.webElements.TextBox;
 

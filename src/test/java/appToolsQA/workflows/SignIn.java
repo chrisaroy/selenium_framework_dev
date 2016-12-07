@@ -1,8 +1,8 @@
-package appWorkflows;
+package appToolsQA.workflows;
 
 import org.openqa.selenium.WebDriver;
 
-import appStoreDemo.store_demo_site;
+import appToolsQA.storeDemo.store_demo_site;
 import support.utilities.TestLog;
 
 /**

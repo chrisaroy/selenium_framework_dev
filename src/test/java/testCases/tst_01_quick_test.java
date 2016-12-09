@@ -34,11 +34,11 @@ public class tst_01_quick_test {
 		TestLog.startTestStep();
 		
 		TestLog.info("Log on to website");
-		String website = "http://www.store.demoqa.com";
+		String website = "http://www.toolsqa.com";
 		driver.get(website);
 		
 		String actualTitle = driver.getTitle();
-		String expectedTitle = "ONLINE STORE | Toolsqa Dummy Test site";
+		String expectedTitle = "QA Automation Tools Tutorial";
 		Confirm.assertCheck(driver, "Check Title", actualTitle, expectedTitle);
 		Wait.sleep(4, "Wait after test");
 	}

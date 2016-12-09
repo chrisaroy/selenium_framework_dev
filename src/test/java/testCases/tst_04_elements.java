@@ -5,7 +5,6 @@ import config.Properties;
 import support.utilities.Confirm;
 import support.utilities.Support;
 import support.utilities.TestLog;
-
 import org.testng.annotations.BeforeClass;
 import java.io.IOException;
 import java.lang.invoke.MethodHandles;
@@ -14,9 +13,9 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
-
 import appToolsQA.Practice_Form_Page;
 import appToolsQA.tools_qa_site;
+
 
 public class tst_04_elements {
 	/********************************************

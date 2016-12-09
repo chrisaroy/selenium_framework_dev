@@ -3,17 +3,14 @@ package testCases;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
-
+import appToolsQA.tools_qa_site;
 import appToolsQA.storeDemo.store_demo_site;
-
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.AfterClass;
-
 import support.utilities.Confirm;
 import support.utilities.Support;
 import support.utilities.TestLog;
 import support.utilities.Wait;
-
 import java.io.IOException;
 import java.lang.invoke.MethodHandles;
 import java.util.concurrent.TimeUnit;
@@ -39,10 +36,14 @@ public class tst_02_basic {
 		TestLog.startTestStep();
 		
 		TestLog.info("Log on to website");
-		String website = "http://www.store.demoqa.com";
+		String website = "http://www.toolsqa.com";
 		driver.get(website);
 		
-		store_demo_site store_site = new store_demo_site();
+		tools_qa_site tools_qa = new tools_qa_site();
+		store_demo_site store_site = tools_qa.home_page.top_link_bar.e_commerce_link_select(driver);
+		
+		
+		//store_demo_site store_site = new store_demo_site();
 		
 		TestLog.info("At Home page.");
 		String expected_title_page = "ONLINE STORE | Toolsqa Dummy Test site";

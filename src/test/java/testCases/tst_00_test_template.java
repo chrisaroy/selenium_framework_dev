@@ -36,7 +36,7 @@ public class tst_00_test_template {
 	//*******************************************
 	
 	private static WebDriver driver = null;
-	String website = "http://www.store.demoqa.com";
+	String website = "http://www.toolsqa.com";
 
 	@BeforeClass
 	public void beforeClass() {
@@ -84,7 +84,7 @@ public class tst_00_test_template {
 		
 		// Test code here		
 		TestLog.info("At Home page.");
-		String expected_title_page = "ONLINE STORE | Toolsqa Dummy Test site";
+		String expected_title_page = "QA Automation Tools Tutorial";
 		String actual_title_page = driver.getTitle();
 		Confirm.assertCheck(driver, "Check the Title Page", actual_title_page, expected_title_page);
 		

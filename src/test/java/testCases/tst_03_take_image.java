@@ -33,7 +33,7 @@ public class tst_03_take_image {
 	@Test
 	public void test_case_take_image() throws InterruptedException, IOException {
 		TestLog.info("Log on to website");
-		String website = "http://www.store.demoqa.com";
+		String website = "http://www.toolsqa.com";
 		driver.get(website);
 		Wait.sleep(2, "Wait before taking image");
 		

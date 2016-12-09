@@ -4,11 +4,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import support.webElements.Button;
 import support.webElements.GetElementByType;
 
-import java.util.Set;
 
 /**
  * IDs for the elements on the practice switch window page
@@ -33,10 +31,36 @@ public class Practice_Switch_Windows_Page{
 	public Button alert_box_button = new Button(practice_switch_window_ids.alert_box_button_id);
 	public Button timing_alert_button =	new Button(practice_switch_window_ids.timing_alert_button_id);	
 	
+	/**
+	 * Select the new message window button.
+	 * @param driver
+	 * @throws InterruptedException
+	 */
 	public void new_message_window_select(WebDriver driver) throws InterruptedException{
+		// Store the current window handle
+		String parentHandle = driver.getWindowHandle();
+		System.out.println(parentHandle);
+		
 		new_message_window_button.click_button(driver);
 		
-		Set handles = driver.getWindowHandles();
+		// Switch to new window opened
+		for (String winHandle : driver.getWindowHandles()){
+			driver.switchTo().window(winHandle);
+		}
+	}
+	
+	public void new_message_window_close(WebDriver driver) {
+		// Store the current window handle
+		String parentHandle = driver.getWindowHandle();
+		System.out.println(parentHandle);
+		
+		// Close the message window
+		driver.close();
+		
+		// Switch to new window handle
+		for (String winHandle : driver.getWindowHandles()){
+			driver.switchTo().window(winHandle);
+		}
 		
 	}
 	

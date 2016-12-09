@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import support.webElements.GetElementByType;
 import support.webElements.Link;
 import appToolsQA.Practice_Form_Page;
+import appToolsQA.Practice_Switch_Windows_Page;
 import appToolsQA.storeDemo.store_demo_site;
 
 /**
@@ -44,6 +45,18 @@ public class TopLinkBar {
 		demo_sites_practice_form_link.click_link(driver);
 		return new Practice_Form_Page();	
 	}
+	
+	/**
+	 * Selects the practice form switch windows link from the demo sites drop down link.
+	 * @param driver - web driver
+	 * @return - Practice_Switch_Windows_Page() object
+	 * @throws InterruptedException
+	 */
+	public Practice_Switch_Windows_Page practice_form_switch_link_select(WebDriver driver) throws InterruptedException {
+		demo_sites_link.click_link(driver);
+		demo_sites_practice_switch_link.click_link(driver);
+		return new Practice_Switch_Windows_Page();
+	}
 
 	/**
 	 * Selects the demo sites e-commerce link and switches the driver.
@@ -52,7 +65,7 @@ public class TopLinkBar {
 	 * @throws InterruptedException
 	 */
 	public store_demo_site e_commerce_link_select(WebDriver driver) throws InterruptedException{
-		// Switch focus to new tab after selecting link.
+		// Store the current window handle
 		String parentHandle = driver.getWindowHandle();
 		System.out.println(parentHandle);
 		
@@ -60,11 +73,10 @@ public class TopLinkBar {
 		demo_sites_link.click_link(driver);
 		demo_sites_e_commerce_link.click_link(driver);
 		
+		// Switch to new window
 		for (String winHandle : driver.getWindowHandles()) { 
-			System.out.println(winHandle);
 			driver.switchTo().window(winHandle);
 		}
-		
 		return new store_demo_site();
 	}
 	

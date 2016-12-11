@@ -1,4 +1,4 @@
-package testCases;
+package test_suites.suite_01_basic_tests;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -15,7 +15,7 @@ import support.utilities.Support;
 import support.utilities.TestLog;
 
 
-public class tst_00_test_template {
+public class tst_01_test_template {
 	/********************************************
 	 * Copyright (C) 2016 - All Rights Reserved
 	 * 

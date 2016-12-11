@@ -1,4 +1,4 @@
-package testCases;
+package test_suites.suite_02_element_window_tests;
 
 import org.testng.annotations.Test;
 import config.Properties;
@@ -17,7 +17,7 @@ import appToolsQA.Practice_Form_Page;
 import appToolsQA.tools_qa_site;
 
 
-public class tst_04_elements {
+public class tst_02_elements {
 	/********************************************
 	 * Copyright (C) 2016 - All Rights Reserved
 	 * 

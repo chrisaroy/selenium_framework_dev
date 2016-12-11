@@ -1,4 +1,4 @@
-package testCases;
+package test_suites.suite_02_element_window_tests;
 
 import org.testng.annotations.Test;
 import appToolsQA.Practice_Switch_Windows_Page;
@@ -17,7 +17,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 
 
-public class tst_06_new_tab_browser {
+public class tst_04_new_tab_browser {
 	/********************************************
 	 * Copyright (C) 2016 - All Rights Reserved
 	 * 

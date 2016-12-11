@@ -1,4 +1,4 @@
-package testCases;
+package test_suites.suite_01_basic_tests;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -15,7 +15,7 @@ import java.io.IOException;
 import java.lang.invoke.MethodHandles;
 import java.util.concurrent.TimeUnit;
 
-public class tst_02_basic {
+public class tst_03_basic {
 	
 	private static WebDriver driver = null;
 	

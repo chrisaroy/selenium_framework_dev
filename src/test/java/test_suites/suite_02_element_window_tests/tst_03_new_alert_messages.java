@@ -1,4 +1,4 @@
-package testCases;
+package test_suites.suite_02_element_window_tests;
 
 import org.testng.annotations.Test;
 import appToolsQA.tools_qa_site;
@@ -18,7 +18,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 
 
-public class tst_05_new_alert_messages {
+public class tst_03_new_alert_messages {
 	/********************************************
 	 * Copyright (C) 2016 - All Rights Reserved
 	 * 

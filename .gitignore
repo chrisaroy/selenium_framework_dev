@@ -115,3 +115,17 @@ test-output/junitreports/TEST-testCases.tst_05_new_windows_and_alerts.xml
 target/test-classes/support/config/log4j2.xml
 test-output/junitreports/TEST-testCases.tst_05_new_alert_messages.xml
 test-output/junitreports/TEST-testCases.tst_06_new_tab_browser.xml
+test-output/old/suite_01_basic_tests/classes.html
+test-output/old/suite_01_basic_tests/methods-not-run.html
+test-output/old/suite_01_basic_tests/methods-alphabetical.html
+test-output/old/suite_01_basic_tests/testng.xml.html
+test-output/suite_01_basic_tests/tst_01_test_template.java.xml
+test-output/old/suite_01_basic_tests/tst_01_test_template.java.properties
+test-output/old/suite_01_basic_tests/toc.html
+test-output/old/suite_01_basic_tests/reporter-output.html
+test-output/suite_01_basic_tests/tst_01_test_template.java.html
+test-output/old/suite_01_basic_tests/index.html
+test-output/old/suite_01_basic_tests/groups.html
+test-output/old/suite_01_basic_tests/methods.html
+test-output/suite_01_basic_tests/testng-failed.xml
+test-output/old/suite_01_basic_tests/main.html

@@ -1,8 +1,6 @@
 package support.utilities;
 
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.interactions.Actions;
 
 /**
  * Commands related to the browser
@@ -16,16 +14,25 @@ public class BrowserCommands {
 	 * @param driver - web driver
 	 */
 	public static void closeTab(WebDriver driver){
-		String parentHandle = driver.getWindowHandle();
-		System.out.println(parentHandle);
-		
-		Actions action = new Actions(driver);
-		action.sendKeys(Keys.CONTROL + "w");
-				
-		// Switch to new window opened
-		for (String winHandle : driver.getWindowHandles()){
-			driver.switchTo().window(winHandle);
-		}
+		driver.close();
+		driver.switchTo().window(config.Properties.parentHandle);
+	}
+	
+	/**
+	 * Close browser window and switch focus to parent window.
+	 * @param driver - web driver.
+	 */
+	public static void closeWindow(WebDriver driver){
+		driver.close();
+		driver.switchTo().window(config.Properties.parentHandle);
+	}
+	
+	/**
+	 * Maximize browser window.
+	 * @param driver - web driver
+	 */
+	public static void maximizWindow(WebDriver driver){
+		driver.manage().window().maximize();
 	}
 
 }

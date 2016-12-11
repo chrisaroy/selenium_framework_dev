@@ -32,39 +32,6 @@ public class Practice_Switch_Windows_Page{
 	public Button timing_alert_button =	new Button(practice_switch_window_ids.timing_alert_button_id);	
 	
 	/**
-	 * Select the new message window button.
-	 * @param driver
-	 * @throws InterruptedException
-	 */
-	public void new_message_window_select(WebDriver driver) throws InterruptedException{
-		// Store the current window handle
-		String parentHandle = driver.getWindowHandle();
-		System.out.println(parentHandle);
-		
-		new_message_window_button.click_button(driver);
-		
-		// Switch to new window opened
-		for (String winHandle : driver.getWindowHandles()){
-			driver.switchTo().window(winHandle);
-		}
-	}
-	
-	public void new_message_window_close(WebDriver driver) {
-		// Store the current window handle
-		String parentHandle = driver.getWindowHandle();
-		System.out.println(parentHandle);
-		
-		// Close the message window
-		driver.close();
-		
-		// Switch to new window handle
-		for (String winHandle : driver.getWindowHandles()){
-			driver.switchTo().window(winHandle);
-		}
-		
-	}
-	
-	/**
 	 * Selects the alert box button.
 	 * @param driver - web driver
 	 * @return Alert Box
@@ -85,9 +52,84 @@ public class Practice_Switch_Windows_Page{
 	 */
 	public Alert timing_alert_button_select(WebDriver driver) throws InterruptedException {
 		timing_alert_button.click_button(driver);
-		WebDriverWait wait = new WebDriverWait(driver, 10);
+		WebDriverWait wait = new WebDriverWait(driver, 60);
 		Alert timing_alert_box = wait.until(ExpectedConditions.alertIsPresent());
 		return timing_alert_box;
 	}
+	
+	/**
+	 * Select the new message window button.
+	 * @param driver - web driver
+	 * @throws InterruptedException
+	 */
+	public void new_message_window_select(WebDriver driver) throws InterruptedException{
+		// Store the current window handle
+		String parentHandle = driver.getWindowHandle();
+		System.out.println(parentHandle);
+		
+		new_message_window_button.click_button(driver);
+		
+		// Switch to new window opened
+		for (String winHandle : driver.getWindowHandles()){
+			driver.switchTo().window(winHandle);
+		}
+	}
+	
+	/**
+	 * Close the new message window.
+	 * @param driver - web driver
+	 */
+	public void new_message_window_close(WebDriver driver) {
+		// Store the current window handle
+		String parentHandle = driver.getWindowHandle();
+		System.out.println(parentHandle);
+		
+		// Close the message window
+		driver.close();
+		
+		// Switch to new window handle
+		for (String winHandle : driver.getWindowHandles()){
+			driver.switchTo().window(winHandle);
+		}
+	}
+
+	/**
+	 * Select the new browser tab button and switch driver to new tab.
+	 * @param driver - web driver
+	 * @return tools_qa_site - window
+	 * @throws InterruptedException
+	 */
+	public tools_qa_site new_browser_tab_button_select(WebDriver driver) throws InterruptedException {
+		// Store the current window handle.
+		config.Properties.parentHandle = driver.getWindowHandle();
+		
+		new_browser_tab_button.click_button(driver);
+		
+		// Switch to new browser opened in tab
+		for (String winHandle : driver.getWindowHandles()){
+			driver.switchTo().window(winHandle);
+		}
+		return new tools_qa_site();
+	}
+	
+	/**
+	 * Select the new browser window button to open a new window switch driver to new tab
+	 * @param driver - web driver
+	 * @return tools_qa_site - window
+	 * @throws InterruptedException 
+	 */
+	public tools_qa_site new_browser_window_button_select(WebDriver driver) throws InterruptedException {
+		// Store current window handle.
+		config.Properties.parentHandle = driver.getWindowHandle();
+		
+		new_browser_window_button.click_button(driver);
+		
+		// Switch to new browser
+		for (String winHandle : driver.getWindowHandles()) {
+			driver.switchTo().window(winHandle);
+		}
+		return new tools_qa_site();
+	}
+	
 }
 

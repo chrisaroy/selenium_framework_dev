@@ -32,4 +32,7 @@ public class Properties {
 	public static int number_asserts = 0;
 	public static int number_passes = 0;
 	public static int number_fails = 0;
+	
+	// Browser 
+	public static String parentHandle = "";
 }

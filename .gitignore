@@ -113,3 +113,5 @@ target/test-classes/testResults/2016-11-28 21-42-40 tst_04_elements/screenshot_3
 target/test-classes/testResults/2016-11-28 21-42-40 tst_04_elements/screenshot_2_assert_verify.png
 test-output/junitreports/TEST-testCases.tst_05_new_windows_and_alerts.xml
 target/test-classes/support/config/log4j2.xml
+test-output/junitreports/TEST-testCases.tst_05_new_alert_messages.xml
+test-output/junitreports/TEST-testCases.tst_06_new_tab_browser.xml

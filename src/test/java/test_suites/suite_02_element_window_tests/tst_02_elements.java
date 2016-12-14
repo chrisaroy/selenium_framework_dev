@@ -38,7 +38,6 @@ public class tst_02_elements {
 	//*******************************************
 	
 	private static WebDriver driver = null;
-	//String website = "http://toolsqa.com/automation-practice-form/";
 	String website = "http://toolsqa.com";
 
 	@BeforeClass

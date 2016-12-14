@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite 02 Element Window Tests" annotations="JDK">
+	<test name="take image">
+		<classes>
+			<class name="test_suites.suite_02_element_window_tests.tst_01_take_image"/>
+		</classes>
+	</test>
+	<test name="elements">
+		<classes>
+			<class name="test_suites.suite_02_element_window_tests.tst_02_elements"/>
+		</classes>
+	</test>
+	<test name="new alert">
+		<classes>
+			<class name="test_suites.suite_02_element_window_tests.tst_03_new_alert_messages"/>
+		</classes>
+	</test>
+	<test name="new tab">
+		<classes>
+			<class name="test_suites.suite_02_element_window_tests.tst_04_new_tab_browser"/>
+		</classes>
+	</test>
+</suite>

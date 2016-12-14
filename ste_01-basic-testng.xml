@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite 01 Basic Tests" annotations="JDK">
+	<test name="test template">
+		<classes>
+			<class name="test_suites.suite_01_basic_tests.tst_01_test_template"/>
+		</classes>
+	</test>
+	<test name = "quick test">
+		<classes>
+			<class name = "test_suites.suite_01_basic_tests.tst_02_quick_test"/>
+		</classes>
+	</test>
+	<test name = "basic">
+		<classes>
+			<class name = "test_suites.suite_01_basic_tests.tst_03_basic"/>
+		</classes>
+	</test>
+</suite>

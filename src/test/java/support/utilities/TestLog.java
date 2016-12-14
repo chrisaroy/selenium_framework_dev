@@ -130,5 +130,7 @@ public class TestLog {
 		TestLog.info("  Requirements: " + Properties.requirements);
 		//TestLog.info("  Number that were asserts: " + Properties.number_asserts);
 		TestLog.info("***********************************************************");
+		TestLog.info("");
+		TestLog.info("");
 	}
 }

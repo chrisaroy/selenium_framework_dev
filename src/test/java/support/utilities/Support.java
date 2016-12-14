@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import org.apache.commons.io.FileUtils;
+import org.apache.logging.log4j.LogManager;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -59,6 +60,9 @@ public class Support {
 		// Set Test Results Folder
 		String test_results_folder = current_date_time + " " + test_name;
 		Properties.test_results_folder = test_results_folder;
+		
+		// Update the log4j2.xml
+		((org.apache.logging.log4j.core.LoggerContext) LogManager.getContext(false)).reconfigure();
 	}
 		
 	/**

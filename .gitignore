@@ -130,3 +130,5 @@ test-output/old/suite_01_basic_tests/methods.html
 test-output/suite_01_basic_tests/testng-failed.xml
 test-output/old/suite_01_basic_tests/main.html
 test-output/junitreports/TEST-test_suites.suite_01_basic_tests.tst_01_test_template.xml
+test-output/Suite/Test.html
+test-output/Suite/Test.xml
